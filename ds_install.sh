@@ -3,33 +3,33 @@
 # ds安装路径
 ds_install_path=/tmp/ds_install
 
-db_host=cdh2-3
+db_host=cdh-3
 
 mysql_passwd=
 
 # zk地址列表
-zk_hosts=cdh2-1:2181,cdh2-2:2181,cdh2-3:2181
+zk_hosts=cdh-4:2181,cdh-2:2181,cdh-3:2181
 
 # 所有可用节点列表
-ips=cdh2-1,cdh2-2,cdh2-3
+ips=cdh-4,cdh-2,cdh-3,
 
 # master节点列表
-masters=cdh2-1
+masters=cdh-2
 
 # work节点列表
-workers=cdh2-2,cdh2-3
+workers=cdh-2,cdh-3
 
 # 警报服务器节点
-alertServer=cdh2-1
+alertServer=cdh-1
 
 # 后端api服务器节点
-apiServers=cdh2-1
+apiServers=cdh-1
 
 # yarn ha 节点列表，没有ha则填空字符串
 yarnHaIps=""
 
 # yarn单节点
-singleYarnIp=cdh2-1
+singleYarnIp=cdh-1
 
 function say {
     printf '\033[1;4;%sm %s: %s \033[0m\n' "$1" "$2" "$3"
